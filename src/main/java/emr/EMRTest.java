@@ -11,7 +11,7 @@ public class EMRTest {
         options.addOption( "o", "output", true, "output file" );
         options.addOption( "i", "input", true, "input directory" );
         CommandLine line = parser.parse( options, args );
-        String inLoc = line.getOptionValue("i", "/mt/DataTest");
+        String inLoc = line.getOptionValue("i", "/mnt/DataTest");
         String outLoc = line.getOptionValue("o", "/mnt/ResultTest/results.txt");
         File para_dir = new File(inLoc);
         String[] fileList = para_dir.list();
